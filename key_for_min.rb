@@ -13,11 +13,11 @@ def key_for_min_value(name_hash)
   hash
 end
 
-def key_for_min_value(name_hash)
-  name_hash = {:drag => 500, :drag => 2, :indy => 1}
+def key_for_min_value(name_hashes)
+  name_hashes = {:drag => 500, :drag => 2, :indy => 1}
   hash = ""
-  name_hash.each do |track, rounds|
-    puts name_hash.values.min_by
+  name_hashes.each do |track, rounds|
+    puts name_hashes.values.min_by
     hash = track
     end
     hash
