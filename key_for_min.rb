@@ -23,6 +23,6 @@ def key_for_min_value(name_hash)
   hash
 end
 
-def key_for_min_value
-  name_hash = Hash.new.empty
+def key_for_min_value(name)
+  name = Hash.new.empty
 end
