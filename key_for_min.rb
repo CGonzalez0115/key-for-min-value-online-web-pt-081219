@@ -22,7 +22,3 @@ def key_for_min_value(name_hash)
   end
   hash
 end
-
-def key_for_min_value()
-  name_hash = Hash.new
-end
