@@ -9,3 +9,4 @@ def key_for_min_value(name_hash)
     if hashes.select {|track, rounds| rounds == hashes.values.max }
     puts "#{rounds}"
   end
+end
