@@ -53,7 +53,7 @@ describe "smallest hash value" do
   end
 
   it "returns the key of the smallest hash value example 2" do
-    expect(key_for_min_value({:drag => 500,  :indy => 1, :circle_eights => 6})).to eq(:indy)
+    expect(key_for_min_value({:indy => 500, :drag => 2, :circle_eights => 1})).to eq(:circle_eights)
   end
 
   it "returns nil for an empty hash" do
