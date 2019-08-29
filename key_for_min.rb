@@ -10,5 +10,5 @@ def key_for_min_value(name_hash)
     puts hashes.values.min_by
     hash = track
   end
-  hashes
+  hash
 end
