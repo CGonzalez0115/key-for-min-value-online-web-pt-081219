@@ -14,11 +14,11 @@ def key_for_min_value(name_hash)
 end
 
 def key_for_min_value(name_hash)
-  name_hash = {:drag => 500,  :indy => 1, :circle_eights => 6}
-  hashes = ""
+  name_hash = {:indy => 500, :drag => 2, :circle_eights => 1}
+  hash = ""
   name_hash.each do |tracks, round|
     puts name_hash.sort_by{ |tracks, round| round }.first
-    hashes = tracks
+    hash = tracks
   end
   hash
 end
