@@ -1,7 +1,7 @@
 describe "smallest hash value" do
 
   it "does not call the `#keys` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:keys)
 
@@ -9,7 +9,7 @@ describe "smallest hash value" do
   end
 
   it "does not call the `#values` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:values)
 
@@ -17,7 +17,7 @@ describe "smallest hash value" do
   end
 
   it "does not call the `#min` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:min)
 
@@ -25,7 +25,7 @@ describe "smallest hash value" do
   end
 
   it "does not call the `#sort` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:sort)
 
@@ -33,7 +33,7 @@ describe "smallest hash value" do
   end
 
   it "does not call the `#sort_by` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:sort_by)
 
@@ -41,7 +41,7 @@ describe "smallest hash value" do
   end
 
   it "does not call the `#min_by` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:min_by)
 
@@ -49,15 +49,15 @@ describe "smallest hash value" do
   end
 
   it "returns the key of the smallest hash value" do
-    expect(key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})).to eq(:adam)
+    expect(key_for_min_value({  name_hash = {:indy => 500, :circle_eights => 1, :drag => 2}})).to eq(:circle_eights)
   end
 
   it "returns the key of the smallest hash value example 2" do
-    expect(key_for_min_value({:blake => 10, :ashley => 50, :adam => 17})).to eq(:blake)
+    expect(key_for_min_value({:indy => 500, :drag => 2, :circle_eights => 1})).to eq(:circle_eights)
   end
 
   it "returns nil for an empty hash" do
-    expect(key_for_min_value({})).to eq(nil)
+    expect(key_for_min_value(name = {})).to eq(nil)
   end
 
 end
