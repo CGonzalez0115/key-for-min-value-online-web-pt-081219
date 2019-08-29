@@ -18,5 +18,7 @@ def key_for_min_value(name_hash)
   hash = ""
   name_hash.each do |tracks, round|
     puts name_hash.sort_by{ |tracks, round| round }.first
+    hash = tracks
   end
+  hash
 end
