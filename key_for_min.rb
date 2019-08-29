@@ -24,5 +24,5 @@ def key_for_min_value(name_hash)
 end
 
 def key_for_min_value(name)
-  name = Hash.new.empty?
+  name = Hash.new
 end
