@@ -27,4 +27,3 @@ def key_for_min_value(name)
   name = Hash.new
   name[""]
 end
-
