@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
   hash
 end
 
-def key_for_min_value(name)
+def key_for_min_value
   name = Hash.new
   name[""]
 end
