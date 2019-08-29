@@ -1,7 +1,7 @@
 describe "smallest hash value" do
 
   it "does not call the `#keys` method" do
-    hash = {:blake => 500, :ashley => 2, :adam => 1}
+    hash = {:indy => 500, :drag => 2, :circle_eights => 1}
 
     expect(hash).to_not receive(:keys)
 
