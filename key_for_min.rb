@@ -24,5 +24,5 @@ def key_for_min_value(name_hash)
 end
 
 def key_for_min_value(name_hash)
-  name_hash = Hash.new { |hash, key| hash[key] =  }
+  name_hash = Hash.new (indy: {...})
 end
