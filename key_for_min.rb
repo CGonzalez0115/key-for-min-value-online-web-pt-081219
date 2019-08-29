@@ -8,4 +8,5 @@ def key_for_min_value(name_hash)
   hashes.each do |track, rounds|
     hashes.values.min_by
   end
+  hashes
 end
